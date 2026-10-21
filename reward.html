@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>打赏支持 · 请作者喝杯咖啡</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161d29; --line:#27303f;
+    --txt:#e6edf3; --muted:#8b98a9;
+    --wx:#07c160; --ali:#1677ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+    background:radial-gradient(1200px 600px at 70% -10%,#16202e 0%,var(--bg) 55%);
+    color:var(--txt);min-height:100vh;padding:36px 16px;line-height:1.5;
+  }
+  .wrap{max-width:880px;margin:0 auto}
+  header{text-align:center;margin-bottom:28px}
+  h1{font-size:24px;font-weight:700;letter-spacing:.5px;display:inline-flex;align-items:center;gap:10px}
+  h1 .dot{width:12px;height:12px;border-radius:50%;background:#f59e0b;box-shadow:0 0 14px #f59e0b}
+  .sub{color:var(--muted);font-size:13px;margin-top:8px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr;max-width:360px;margin:0 auto}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center;
+    transition:transform .15s, box-shadow .15s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .card img{width:100%;max-width:340px;border-radius:12px;display:block;margin:0 auto}
+  .tag{display:inline-block;font-size:13px;font-weight:700;padding:6px 18px;border-radius:999px;margin-bottom:14px;color:#fff}
+  .tag.wx{background:var(--wx)}
+  .tag.ali{background:var(--ali)}
+  .tip{color:var(--muted);font-size:12px;margin-top:12px}
+  .back{text-align:center;margin-top:30px}
+  .back a{color:var(--muted);font-size:13px;text-decoration:none;border:1px solid var(--line);
+    border-radius:8px;padding:9px 20px;display:inline-block;transition:.12s}
+  .back a:hover{color:#f59e0b;border-color:#f59e0b}
+  .heart{color:#f59e0b}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="dot"></span>打赏支持 <span class="heart">♥</span></h1>
+    <div class="sub">如果这个小工具帮到了你，欢迎扫码请作者喝杯咖啡，感谢每一份支持！</div>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <span class="tag wx">微信支付</span>
+      <img src="微信支付.jpg" alt="微信支付收款码">
+      <div class="tip">打开微信「扫一扫」，识别二维码打赏</div>
+    </div>
+    <div class="card">
+      <span class="tag ali">支付宝</span>
+      <img src="支付宝.jpg" alt="支付宝收款码">
+      <div class="tip">打开支付宝「扫一扫」，识别二维码打赏</div>
+    </div>
+  </div>
+
+  <div class="back"><a href="rotor-balance.html">← 返回计算器</a></div>
+</div>
+</body>
+</html>
